@@ -20,6 +20,7 @@ pub fn build(b: *Builder) void {
     exe.linkSystemLibrary("X11");
     exe.linkSystemLibrary("Xinerama");
     exe.linkSystemLibrary("Xft");
+    exe.linkSystemLibrary("fontconfig");
 
     const run_cmd = exe.run();
     run_cmd.step.dependOn(b.getInstallStep());
