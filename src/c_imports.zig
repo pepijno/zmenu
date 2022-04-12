@@ -7,4 +7,5 @@ pub const c = @cImport({
     @cInclude("locale.h");
     @cInclude("stdio.h");
     @cInclude("fontconfig/fontconfig.h");
+    @cInclude("time.h");
 });
